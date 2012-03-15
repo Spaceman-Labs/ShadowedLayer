@@ -1,4 +1,4 @@
-RADME
+README
 ======
 
 A CALayer subclass with an approximation of Lambert shading and specular highlighting. Provides the graphical glory of a very basic lighting model combined with the relatively heavy-weight Core Animation object model. This yields visual results that are hard to achieve in Core Animation, seamlessly integrated with the ease of animation that is so hard to achieve in OpenGL.
