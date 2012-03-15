@@ -21,8 +21,8 @@
 
 @implementation SMShadowedLayer
 
-@synthesize maxShadowOpacity, shadowingColor, showShadow,
-			maxSpecularOpacity, specularColor, showHighlight, specularFalloff;
+@synthesize shadowingColor, showShadow,
+			specularColor, specularFalloff, showHighlight;
 @dynamic currentShadowOpacity,
 		 currentSpecularOpacity;
 
@@ -37,16 +37,17 @@
 		shadowLayer = [CALayer layer];
 		shadowLayer.opacity = 0.f;
 		[self addSublayer:shadowLayer];
-		self.shadowingColor = [UIColor blackColor];
-		maxShadowOpacity = 0.75f;
+		self.shadowingColor = [UIColor colorWithWhite:0.f alpha:.75f];
 		
 		specularLayer = [CALayer layer];
 		specularLayer.opacity = 0.f;
 		specularLayer.hidden = YES;
 		[self addSublayer:specularLayer];
 		self.specularColor = [UIColor whiteColor];
-		maxSpecularOpacity = 1.f;
 		specularFalloff = 64.f;
+
+		showShadow = YES;
+		showHighlight = NO;
 	}
 	return self;
 }
@@ -138,12 +139,12 @@
 
 - (float)currentSpecularOpacity
 {
-	return specularLayer.opacity / maxSpecularOpacity;
+	return specularLayer.opacity;
 }
 
 - (void)setCurrentSpecularOpacity:(float)currentSpecularOpacity
 {
-	specularLayer.opacity = currentSpecularOpacity * maxSpecularOpacity;
+	specularLayer.opacity = currentSpecularOpacity;
 }
 
 - (void)setShowShadow:(BOOL)show
@@ -163,12 +164,12 @@
 
 - (float)currentShadowOpacity
 {
-	return shadowLayer.opacity / maxShadowOpacity;
+	return shadowLayer.opacity;
 }
 
 - (void)setCurrentShadowOpacity:(float)currentShadowOpacity
 {
-	shadowLayer.opacity = currentShadowOpacity * maxShadowOpacity;
+	shadowLayer.opacity = currentShadowOpacity;
 }
 
 #pragma mark - Internal logic
@@ -194,8 +195,8 @@
 	//newNormal.m21 /= magnitude;
 	newNormal.m31 /= magnitude;
 	float dotProduct = newNormal.m31;
-	shadowLayer.opacity = fmaxf(0, fminf(1, (1.f - dotProduct)) * maxShadowOpacity);
-	specularLayer.opacity = fmaxf(0, fminf(1, powf(dotProduct, specularFalloff)) * maxSpecularOpacity);
+	shadowLayer.opacity = fmaxf(0, fminf(1, (1.f - dotProduct)));
+	specularLayer.opacity = fmaxf(0, fminf(1, powf(dotProduct, specularFalloff)));
 }
 
 - (CALayer*)constructShadowMask

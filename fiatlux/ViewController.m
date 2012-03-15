@@ -38,8 +38,6 @@
 	self.view.backgroundColor = [UIColor grayColor];
 	
 	layer = [SMShadowedLayer layer];
-	layer.doubleSided = NO;
-	layer.maxShadowOpacity = .75f;
 	layer.showHighlight = YES;
 	[self.view.layer addSublayer:layer];
 	
