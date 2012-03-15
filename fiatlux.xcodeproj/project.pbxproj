@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B7D5FBF15117F0500DE17EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7D5FBE15117F0500DE17EE /* UIKit.framework */; };
+		6B7D5FC115117F0500DE17EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7D5FC015117F0500DE17EE /* Foundation.framework */; };
+		6B7D5FC315117F0500DE17EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7D5FC215117F0500DE17EE /* CoreGraphics.framework */; };
+		6B7D5FC915117F0500DE17EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D5FC715117F0500DE17EE /* InfoPlist.strings */; };
+		6B7D5FCB15117F0500DE17EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D5FCA15117F0500DE17EE /* main.m */; };
+		6B7D5FCF15117F0500DE17EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D5FCE15117F0500DE17EE /* AppDelegate.m */; };
+		6B7D5FD215117F0500DE17EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D5FD115117F0500DE17EE /* ViewController.m */; };
+		6B7D5FD515117F0500DE17EE /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D5FD315117F0500DE17EE /* ViewController.xib */; };
+		6B7D5FDE1511808700DE17EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7D5FDD1511808700DE17EE /* QuartzCore.framework */; };
+		6B7D5FDF1511809800DE17EE /* SMShadowedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */; };
+		6B7D5FFC151298AE00DE17EE /* logo_periwinkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B7D5FBA15117F0500DE17EE /* fiatlux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fiatlux.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B7D5FBE15117F0500DE17EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		6B7D5FC015117F0500DE17EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		6B7D5FC215117F0500DE17EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		6B7D5FC615117F0500DE17EE /* fiatlux-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fiatlux-Info.plist"; sourceTree = "<group>"; };
+		6B7D5FC815117F0500DE17EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		6B7D5FCA15117F0500DE17EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6B7D5FCC15117F0500DE17EE /* fiatlux-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fiatlux-Prefix.pch"; sourceTree = "<group>"; };
+		6B7D5FCD15117F0500DE17EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6B7D5FCE15117F0500DE17EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6B7D5FD015117F0500DE17EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6B7D5FD115117F0500DE17EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6B7D5FD415117F0500DE17EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		6B7D5FDB15117F2C00DE17EE /* SMShadowedLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMShadowedLayer.h; sourceTree = "<group>"; };
+		6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMShadowedLayer.m; sourceTree = "<group>"; };
+		6B7D5FDD1511808700DE17EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_periwinkle.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B7D5FB715117F0500DE17EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7D5FDE1511808700DE17EE /* QuartzCore.framework in Frameworks */,
+				6B7D5FBF15117F0500DE17EE /* UIKit.framework in Frameworks */,
+				6B7D5FC115117F0500DE17EE /* Foundation.framework in Frameworks */,
+				6B7D5FC315117F0500DE17EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B7D5FAF15117F0500DE17EE = {
+			isa = PBXGroup;
+			children = (
+				6B7D5FDD1511808700DE17EE /* QuartzCore.framework */,
+				6B7D5FC415117F0500DE17EE /* fiatlux */,
+				6B7D5FBD15117F0500DE17EE /* Frameworks */,
+				6B7D5FBB15117F0500DE17EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B7D5FBB15117F0500DE17EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D5FBA15117F0500DE17EE /* fiatlux.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B7D5FBD15117F0500DE17EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D5FBE15117F0500DE17EE /* UIKit.framework */,
+				6B7D5FC015117F0500DE17EE /* Foundation.framework */,
+				6B7D5FC215117F0500DE17EE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6B7D5FC415117F0500DE17EE /* fiatlux */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D5FCD15117F0500DE17EE /* AppDelegate.h */,
+				6B7D5FCE15117F0500DE17EE /* AppDelegate.m */,
+				6B7D5FD015117F0500DE17EE /* ViewController.h */,
+				6B7D5FD115117F0500DE17EE /* ViewController.m */,
+				6B7D5FDB15117F2C00DE17EE /* SMShadowedLayer.h */,
+				6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */,
+				6B7D5FD315117F0500DE17EE /* ViewController.xib */,
+				6B7D5FC515117F0500DE17EE /* Supporting Files */,
+			);
+			path = fiatlux;
+			sourceTree = "<group>";
+		};
+		6B7D5FC515117F0500DE17EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */,
+				6B7D5FC615117F0500DE17EE /* fiatlux-Info.plist */,
+				6B7D5FC715117F0500DE17EE /* InfoPlist.strings */,
+				6B7D5FCA15117F0500DE17EE /* main.m */,
+				6B7D5FCC15117F0500DE17EE /* fiatlux-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B7D5FB915117F0500DE17EE /* fiatlux */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B7D5FD815117F0500DE17EE /* Build configuration list for PBXNativeTarget "fiatlux" */;
+			buildPhases = (
+				6B7D5FB615117F0500DE17EE /* Sources */,
+				6B7D5FB715117F0500DE17EE /* Frameworks */,
+				6B7D5FB815117F0500DE17EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fiatlux;
+			productName = fiatlux;
+			productReference = 6B7D5FBA15117F0500DE17EE /* fiatlux.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B7D5FB115117F0500DE17EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "Spaceman Labs";
+			};
+			buildConfigurationList = 6B7D5FB415117F0500DE17EE /* Build configuration list for PBXProject "fiatlux" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 6B7D5FAF15117F0500DE17EE;
+			productRefGroup = 6B7D5FBB15117F0500DE17EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B7D5FB915117F0500DE17EE /* fiatlux */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B7D5FB815117F0500DE17EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7D5FC915117F0500DE17EE /* InfoPlist.strings in Resources */,
+				6B7D5FD515117F0500DE17EE /* ViewController.xib in Resources */,
+				6B7D5FFC151298AE00DE17EE /* logo_periwinkle.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B7D5FB615117F0500DE17EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B7D5FCB15117F0500DE17EE /* main.m in Sources */,
+				6B7D5FCF15117F0500DE17EE /* AppDelegate.m in Sources */,
+				6B7D5FD215117F0500DE17EE /* ViewController.m in Sources */,
+				6B7D5FDF1511809800DE17EE /* SMShadowedLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6B7D5FC715117F0500DE17EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B7D5FC815117F0500DE17EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		6B7D5FD315117F0500DE17EE /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6B7D5FD415117F0500DE17EE /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6B7D5FD615117F0500DE17EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		6B7D5FD715117F0500DE17EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B7D5FD915117F0500DE17EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fiatlux/fiatlux-Prefix.pch";
+				INFOPLIST_FILE = "fiatlux/fiatlux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		6B7D5FDA15117F0500DE17EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fiatlux/fiatlux-Prefix.pch";
+				INFOPLIST_FILE = "fiatlux/fiatlux-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B7D5FB415117F0500DE17EE /* Build configuration list for PBXProject "fiatlux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7D5FD615117F0500DE17EE /* Debug */,
+				6B7D5FD715117F0500DE17EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B7D5FD815117F0500DE17EE /* Build configuration list for PBXNativeTarget "fiatlux" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B7D5FD915117F0500DE17EE /* Debug */,
+				6B7D5FDA15117F0500DE17EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6B7D5FB115117F0500DE17EE /* Project object */;
+}
