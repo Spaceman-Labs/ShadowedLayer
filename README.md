@@ -5,6 +5,8 @@ A CALayer subclass with an approximation of Lambert shading and specular highlig
 
 In short: a layer with shininess and shadowing.
 
+There's a blog post with slightly more detail here: [http://www.ultrajoke.net/2012/03/smshadowedlayer/](http://www.ultrajoke.net/2012/03/smshadowedlayer/)
+
 HOW IT WORKS
 ------------
 
