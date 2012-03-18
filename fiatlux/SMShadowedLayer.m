@@ -59,6 +59,11 @@
 	[super dealloc];
 }
 
+- (void)addSublayer:(CALayer *)layer
+{
+	[self insertSublayer:layer below:shadowLayer];
+}
+
 #pragma mark - Reasons to reconstruct the shadow layer's mask
 
 - (void)setBounds:(CGRect)bounds
