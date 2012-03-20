@@ -19,6 +19,8 @@ Use as you would any other CALayer. Set background color, contents, and so on, a
 
 The shadow and specular properties can also be used to fake other effects, such as the layer being shadowed by something above it. Simply set the currentShadowOpacity or currentSpecularOpacity. Note that subsequently transforming the layer will reset these as per the animation.
 
+The project includes an optional CATransformLayer subclass that's aware of the shadowed layer's unique properties. If you use SMTransformLayer to contain SMShadowedLayers, they will behave as expected. If you prefer to use CATransformLayer, you'll have to call `[layer setTransform:layer.transform animatePerFrame:YES]` in any transaction in which you change the transform layer's `transform` or `sublayerTransform` properties.
+
 LICENSE
 -------
 
