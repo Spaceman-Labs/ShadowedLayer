@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "SMShadowedLayer.h"
+#import "SMShadowedTransformLayer.h"
 
 @interface ViewController ()
 {
 	SMShadowedLayer *layer;
+	SMShadowedTransformLayer *transformLayer;
 }
 @end
 
@@ -37,9 +39,12 @@
 	self.view.layer.sublayerTransform = perspective;
 	self.view.backgroundColor = [UIColor grayColor];
 	
+	transformLayer = [SMShadowedTransformLayer layer];
+	[self.view.layer addSublayer:transformLayer];
+	
 	layer = [SMShadowedLayer layer];
 	layer.showHighlight = YES;
-	[self.view.layer addSublayer:layer];
+	[transformLayer addSublayer:layer];
 	
 	UIImage *image = [UIImage imageNamed:@"logo_periwinkle"];
 	layer.contents = (id)image.CGImage;
@@ -61,7 +66,9 @@
 						   (location.y - viewSize.height / 2) / viewSize.height);
 	[CATransaction begin];
 	[CATransaction setDisableActions:YES];
-	layer.transform = CATransform3DRotate(CATransform3DMakeRotation(M_PI * location.x, 0, 1, 0), -M_PI * location.y, 1, 0, 0);
+	transformLayer.transform = CATransform3DRotate(CATransform3DMakeRotation(M_PI * location.x, 0, 1, 0), -M_PI * location.y, 1, 0, 0);
+	// if I weren't using SMShadowedTransformLayer, here I would simply do:
+	// [layer setTransform:layer.transform animatePerFrame:YES];
 	[CATransaction commit];
 }
 
@@ -73,7 +80,9 @@
 						   (location.y - viewSize.height / 2) / viewSize.height);
 	[CATransaction begin];
 	[CATransaction setAnimationDuration:1.f];
-	layer.transform = CATransform3DRotate(CATransform3DMakeRotation(M_PI * location.x, 0, 1, 0), -M_PI * location.y, 1, 0, 0);
+	transformLayer.transform = CATransform3DRotate(CATransform3DMakeRotation(M_PI * location.x, 0, 1, 0), -M_PI * location.y, 1, 0, 0);
+	// if I weren't using SMShadowedTransformLayer, here I would simply do:
+	// [layer setTransform:layer.transform animatePerFrame:YES];
 	[CATransaction commit];
 }
 
@@ -86,6 +95,7 @@
 {
 	CGSize viewSize = self.view.bounds.size;
 	layer.frame = CGRectMake(viewSize.width/2 - 150, viewSize.height/2 - 150, 300, 300);
+	transformLayer.frame = self.view.bounds;
 }
 
 @end

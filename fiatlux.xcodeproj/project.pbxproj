@@ -18,6 +18,7 @@
 		6B7D5FDE1511808700DE17EE /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B7D5FDD1511808700DE17EE /* QuartzCore.framework */; };
 		6B7D5FDF1511809800DE17EE /* SMShadowedLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */; };
 		6B7D5FFC151298AE00DE17EE /* logo_periwinkle.png in Resources */ = {isa = PBXBuildFile; fileRef = 6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */; };
+		6B7D60A315191F4500DE17EE /* SMShadowedTransformLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6B7D60A215191F4500DE17EE /* SMShadowedTransformLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMShadowedLayer.m; sourceTree = "<group>"; };
 		6B7D5FDD1511808700DE17EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_periwinkle.png; sourceTree = "<group>"; };
+		6B7D60A115191F4500DE17EE /* SMShadowedTransformLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMShadowedTransformLayer.h; sourceTree = "<group>"; };
+		6B7D60A215191F4500DE17EE /* SMShadowedTransformLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMShadowedTransformLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				6B7D5FD115117F0500DE17EE /* ViewController.m */,
 				6B7D5FDB15117F2C00DE17EE /* SMShadowedLayer.h */,
 				6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */,
+				6B7D60A115191F4500DE17EE /* SMShadowedTransformLayer.h */,
+				6B7D60A215191F4500DE17EE /* SMShadowedTransformLayer.m */,
 				6B7D5FD315117F0500DE17EE /* ViewController.xib */,
 				6B7D5FC515117F0500DE17EE /* Supporting Files */,
 			);
@@ -178,6 +183,7 @@
 				6B7D5FCF15117F0500DE17EE /* AppDelegate.m in Sources */,
 				6B7D5FD215117F0500DE17EE /* ViewController.m in Sources */,
 				6B7D5FDF1511809800DE17EE /* SMShadowedLayer.m in Sources */,
+				6B7D60A315191F4500DE17EE /* SMShadowedTransformLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
