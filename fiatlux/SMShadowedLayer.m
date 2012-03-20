@@ -44,7 +44,7 @@
 		specularLayer.opacity = 0.f;
 		specularLayer.hidden = YES;
 		[self addSublayer:specularLayer];
-		self.specularColor = [UIColor whiteColor];
+		self.specularColor = [UIColor colorWithWhite:1.f alpha:.9f];
 		specularFalloff = 64.f;
 
 		showShadow = YES;

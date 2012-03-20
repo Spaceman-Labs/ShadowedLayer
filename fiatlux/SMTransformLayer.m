@@ -1,21 +1,21 @@
 //
-//  SMShadowedTransformLayer.m
+//  SMTransformLayer.m
 //  fiatlux
 //
 //  Created by Joel Kraut on 3/20/12.
 //  Copyright (c) 2012 Spaceman Labs. All rights reserved.
 //
 
-#import "SMShadowedTransformLayer.h"
+#import "SMTransformLayer.h"
 #import "SMShadowedLayer.h"
 
-@interface SMShadowedTransformLayer ()
+@interface SMTransformLayer ()
 @property (nonatomic, readonly) NSMutableSet *shadowedLayers;
 - (void)trackPotentialShadowedLayer:(CALayer*)layer;
 - (void)checkSublayersForShadows;
 @end
 
-@implementation SMShadowedTransformLayer
+@implementation SMTransformLayer
 @synthesize shadowedLayers;
 
 - (void)dealloc

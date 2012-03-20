@@ -8,12 +8,12 @@
 
 #import "ViewController.h"
 #import "SMShadowedLayer.h"
-#import "SMShadowedTransformLayer.h"
+#import "SMTransformLayer.h"
 
 @interface ViewController ()
 {
 	SMShadowedLayer *layer;
-	SMShadowedTransformLayer *transformLayer;
+	SMTransformLayer *transformLayer;
 }
 @end
 
@@ -39,7 +39,7 @@
 	self.view.layer.sublayerTransform = perspective;
 	self.view.backgroundColor = [UIColor grayColor];
 	
-	transformLayer = [SMShadowedTransformLayer layer];
+	transformLayer = [SMTransformLayer layer];
 	[self.view.layer addSublayer:transformLayer];
 	
 	layer = [SMShadowedLayer layer];
