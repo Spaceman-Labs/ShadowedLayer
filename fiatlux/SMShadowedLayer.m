@@ -11,6 +11,7 @@
 @interface SMShadowedLayer() {
 	CALayer *shadowLayer;
 	CALayer *specularLayer;
+	BOOL parentIsTransformLayer;
 }
 
 @property (nonatomic, assign) float _animator;
@@ -189,6 +190,11 @@
 
 - (void)respondToTransform:(CATransform3D)transform
 {
+	// add in the parent's transforms
+	CALayer *superlayer = self.superlayer.presentationLayer;
+	transform = CATransform3DConcat(superlayer.sublayerTransform, transform);
+	if (parentIsTransformLayer)
+		transform = CATransform3DConcat(superlayer.transform, transform);
 	CATransform3D normal;
 	memset(&normal, 0, sizeof(CATransform3D));
 	normal.m31 = 1.f;
@@ -217,6 +223,15 @@
 	mask.contentsScale = self.contentsScale;
 	
 	return mask;
+}
+
+- (id < CAAction >)actionForKey:(NSString *)key
+{
+	// if we're under a transform layer, we also need to account for its transform
+	if ([key isEqualToString:@"onOrderIn"])
+		parentIsTransformLayer = ([self.superlayer isKindOfClass:[CATransformLayer class]]);
+
+	return [super actionForKey:key];
 }
 
 #pragma mark - Class Methods
