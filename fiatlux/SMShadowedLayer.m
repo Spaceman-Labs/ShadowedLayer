@@ -192,6 +192,9 @@
 {
 	// add in the parent's transforms
 	CALayer *superlayer = self.superlayer.presentationLayer;
+	if (!superlayer)
+		return;
+	
 	transform = CATransform3DConcat(superlayer.sublayerTransform, transform);
 	if (parentIsTransformLayer)
 		transform = CATransform3DConcat(superlayer.transform, transform);
