@@ -8,6 +8,8 @@
 
 #import "SMShadowedLayer.h"
 
+#import <UIKit/UIKit.h>
+
 @interface SMShadowedLayer() {
 	CALayer *shadowLayer;
 	CALayer *specularLayer;
