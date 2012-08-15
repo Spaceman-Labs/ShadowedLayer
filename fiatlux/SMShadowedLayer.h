@@ -17,11 +17,11 @@
 - (void)setTransform:(CATransform3D)transform animatePerFrame:(BOOL)internalAnimate;
 
 @property (nonatomic, assign) BOOL showShadow;
-@property (nonatomic, retain) UIColor *shadowingColor;
+@property (nonatomic, strong) UIColor *shadowingColor;
 @property (nonatomic, assign) float currentShadowOpacity;
 
 @property (nonatomic, assign) BOOL showHighlight;
-@property (nonatomic, retain) UIColor *specularColor;
+@property (nonatomic, strong) UIColor *specularColor;
 @property (nonatomic, assign) float specularFalloff;
 @property (nonatomic, assign) float currentSpecularOpacity;
 

@@ -51,11 +51,9 @@
 	
 	UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
 	[self.view addGestureRecognizer:pan];
-	[pan release];
 	
 	UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)];
 	[self.view addGestureRecognizer:tap];
-	[tap release];
 }
 
 - (void)pan:(UIPanGestureRecognizer*)pan

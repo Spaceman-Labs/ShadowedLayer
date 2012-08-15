@@ -18,11 +18,6 @@
 @implementation SMTransformLayer
 @synthesize shadowedLayers;
 
-- (void)dealloc
-{
-	[shadowedLayers release];
-	[super dealloc];
-}
 
 #pragma mark - inform shadowed layer sublayers of our transforms
 

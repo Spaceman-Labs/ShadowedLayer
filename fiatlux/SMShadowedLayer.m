@@ -55,12 +55,6 @@
 	return self;
 }
 
-- (void)dealloc
-{
-	[shadowingColor release];
-	[specularColor release];
-	[super dealloc];
-}
 
 - (void)addSublayer:(CALayer *)layer
 {
@@ -140,8 +134,7 @@
 {
 	if ([color isEqual:specularColor])
 		return;
-	[specularColor release];
-	specularColor = [color retain];
+	specularColor = color;
 	specularLayer.backgroundColor = specularColor.CGColor;
 }
 
@@ -165,8 +158,7 @@
 {
 	if ([color isEqual:shadowingColor])
 		return;
-	[shadowingColor release];
-	shadowingColor = [color retain];
+	shadowingColor = color;
 	shadowLayer.backgroundColor = shadowingColor.CGColor;
 }
 

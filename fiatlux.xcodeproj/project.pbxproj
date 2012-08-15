@@ -39,7 +39,7 @@
 		6B7D5FDC15117F2C00DE17EE /* SMShadowedLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMShadowedLayer.m; sourceTree = "<group>"; };
 		6B7D5FDD1511808700DE17EE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		6B7D5FFB151298AE00DE17EE /* logo_periwinkle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_periwinkle.png; sourceTree = "<group>"; };
-		6B7D60A115191F4500DE17EE /* SMTransformLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; path = SMTransformLayer.h; sourceTree = "<group>"; };
+		6B7D60A115191F4500DE17EE /* SMTransformLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMTransformLayer.h; sourceTree = "<group>"; };
 		6B7D60A215191F4500DE17EE /* SMTransformLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMTransformLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -257,6 +257,7 @@
 		6B7D5FD915117F0500DE17EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fiatlux/fiatlux-Prefix.pch";
 				INFOPLIST_FILE = "fiatlux/fiatlux-Info.plist";
@@ -268,6 +269,7 @@
 		6B7D5FDA15117F0500DE17EE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fiatlux/fiatlux-Prefix.pch";
 				INFOPLIST_FILE = "fiatlux/fiatlux-Info.plist";
